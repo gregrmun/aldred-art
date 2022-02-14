@@ -125,7 +125,7 @@ const Clientwork = () => {
                                 <Space direction="vertical" style={{textAlign: 'center'}} >
                                     <img
                                         className="artworkImage"
-                                        src={require('../../assets/artwork/BigWave.jpeg')}
+                                        src={require('../../assets/artwork/BigWave.jpg')}
                                     />
                                     
                                     <Text className="artworkText">
