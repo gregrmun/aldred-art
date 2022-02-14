@@ -7,7 +7,7 @@ import { useHistory } from 'react-router-dom';
 // import '../home/carousel.css';
 
 
-import './index.css';
+import '../index.css';
 
 import NavbarStyled from "../navigation/header";
 import AAFooter from "../navigation/footer";

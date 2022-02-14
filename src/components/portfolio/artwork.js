@@ -12,7 +12,6 @@ import {
     } from 'antd';
 
 import { useHistory } from 'react-router-dom';
-
 import NavbarStyled from "../navigation/header";
 import AAFooter from "../navigation/footer";
 import './portfolio.css';
