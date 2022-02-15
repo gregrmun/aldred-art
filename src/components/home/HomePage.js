@@ -46,9 +46,9 @@ const HomePage = (props) => {
                        <HomeSlider />
                     </div>
                     <div>
-                    <InstaFeeds 
-                        token={process.env.IGQVJWaHJibnZAaaGJ0OGo2VTJwOExaWDRjZAVFfN1p2ZAi05RDN0elVVT0FsUWp0ZAXRkRFoxd2pPRmczVzVweWY0MVRqOFJjTVFGRkpZANURZARnF5cEU5U240cV9rMWpwZA1RJN182S0NB}
-                        limit={12}/>
+                        <InstaFeeds 
+                            token={process.env.IGQVJVbTVLeFJXeVB6aHRuYTR4NGxzY2VPOGJQUXlwaVRoMFE3T3huWUpSdF8yamRsTld4VEMwcEJBd2NBV3FfR2pxclFaeElISW1sNnZAoNVc4bHFwNWx4REJ2TzkwNXdUYXBkVHU4QWRBT1FGa0tjUwZDZD}
+                            limit={12}/>
                     </div>
                 </Col>
         </Content>
