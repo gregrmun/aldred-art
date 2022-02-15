@@ -12,6 +12,7 @@ import '../index.css';
 import NavbarStyled from "../navigation/header";
 import AAFooter from "../navigation/footer";
 import HomeSlider from "../utils/homeslider";
+import InstaFeeds from "../utils/instacanvas";
 
 
 
@@ -32,11 +33,11 @@ const HomePage = (props) => {
     return (
     <Layout className="layout" >
         
-        <Affix>
-                <Header className="header" style={{ zIndex: 1000, width: '100%', flexDirection: 'row'}}>
-                    <NavbarStyled />
-                </Header>
-        </Affix>
+       
+        <Header className="header" style={{ zIndex: 1000, width: '100%', flexDirection: 'row'}}>
+            <NavbarStyled />
+        </Header>
+
       
         <Content>
 
@@ -44,53 +45,12 @@ const HomePage = (props) => {
                     <div className="innerBox" >
                        <HomeSlider />
                     </div>
+                    <div>
+                    <InstaFeeds 
+                        token={process.env.IGQVJWaHJibnZAaaGJ0OGo2VTJwOExaWDRjZAVFfN1p2ZAi05RDN0elVVT0FsUWp0ZAXRkRFoxd2pPRmczVzVweWY0MVRqOFJjTVFGRkpZANURZARnF5cEU5U240cV9rMWpwZA1RJN182S0NB}
+                        limit={12}/>
+                    </div>
                 </Col>
-
-
-
-                {/* <OwlCarousel className='owl-theme testimonial__carousel-wrapper' loop margin={10} nav autoplay="true" >
-
-                    
-                        <div class="item">
-                            <div role="listitem" class="testimonial__card w-dyn-item">
-                                <img src={require('../../assets/home/EyeArt.png')} />
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div role="listitem" class="testimonial__card w-dyn-item">
-                                <img src={require('../../assets/home/EyeArt.png')} />
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div role="listitem" class="testimonial__card w-dyn-item">
-                                <img src={require('../../assets/home/EyeArt.png')} />
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div role="listitem" class="testimonial__card w-dyn-item">
-                                <img src={require('../../assets/home/EyeArt.png')} />
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div role="listitem" class="testimonial__card w-dyn-item">
-                                <img src={require('../../assets/home/EyeArt.png')} />
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div role="listitem" class="testimonial__card w-dyn-item">
-                                <img src={require('../../assets/home/EyeArt.png')} />
-                            </div>
-                        </div>
-                         
-                   
-
-                   
-                </OwlCarousel> */}
-
-
-                
-
-            
         </Content>
         
     <Footer className="footer"> 
