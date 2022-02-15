@@ -29,7 +29,6 @@ const HomePage = (props) => {
       history.push("/");
     };  
 
-
     
     return (
     <Layout className="layout" >
