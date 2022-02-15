@@ -29,7 +29,6 @@ const HomePage = (props) => {
       history.push("/");
     };  
 
-    require('dotenv').config()
 
     
     return (
