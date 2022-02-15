@@ -47,7 +47,7 @@ const HomePage = (props) => {
                     </div>
                     <div>
                         <InstaFeeds 
-                            token={process.env.IGQVJVbTVLeFJXeVB6aHRuYTR4NGxzY2VPOGJQUXlwaVRoMFE3T3huWUpSdF8yamRsTld4VEMwcEJBd2NBV3FfR2pxclFaeElISW1sNnZAoNVc4bHFwNWx4REJ2TzkwNXdUYXBkVHU4QWRBT1FGa0tjUwZDZD}
+                            token={IGQVJVbTVLeFJXeVB6aHRuYTR4NGxzY2VPOGJQUXlwaVRoMFE3T3huWUpSdF8yamRsTld4VEMwcEJBd2NBV3FfR2pxclFaeElISW1sNnZAoNVc4bHFwNWx4REJ2TzkwNXdUYXBkVHU4QWRBT1FGa0tjUwZDZD}
                             limit={12}/>
                     </div>
                 </Col>
