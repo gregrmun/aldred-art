@@ -19,9 +19,6 @@ import InstaFeeds from "../utils/instacanvas";
 
 const { Header, Footer, Content } = Layout;
 
-console.log(process.env.INST_LONG_TOKEN)
-
-
 const HomePage = (props) => {
 
     const history = useHistory();
@@ -29,8 +26,6 @@ const HomePage = (props) => {
     const goToHome = () => {
       history.push("/");
     };  
-
-    
 
     
     return (

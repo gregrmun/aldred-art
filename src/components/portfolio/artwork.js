@@ -18,7 +18,7 @@ import './portfolio.css';
 import '../index.css';
 
 const { Header, Content, Footer } = Layout;
-const { Text, Title } = Typography;
+const { Text, Title, Paragraph } = Typography;
 
 
 
@@ -77,7 +77,7 @@ const Artwork = () => {
                                     <Button type="ghost" onClick={goToBigTreeProduct} className="artworkButton"> 
                                         <img
                                             className="artworkImage"
-                                            src={require('../../assets/artwork/BigTree.jpg')}
+                                            src={require('../../assets/artwork/BigTreeInContext.jpg')}
                                         />
                                         
                                     </Button>
@@ -108,7 +108,7 @@ const Artwork = () => {
                                 <Space direction="vertical" style={{textAlign: 'center'}} >
                                     <img
                                         className="artworkImage"
-                                        src={require('../../assets/artwork/InnerChild.jpg')}
+                                        src={require('../../assets/artwork/WavesInContext.jpg')}
                                     />
                                     
                                     <Text className="artworkText">
@@ -122,7 +122,7 @@ const Artwork = () => {
                                 <Space direction="vertical" style={{textAlign: 'center'}} >
                                     <img
                                         className="artworkImage"
-                                        src={require('../../assets/artwork/SoulMates.jpg')}
+                                        src={require('../../assets/artwork/SoulMatesInContext.jpg')}
                                     />
                                     
                                     <Text className="artworkText">
@@ -138,7 +138,7 @@ const Artwork = () => {
                                 <Space direction="vertical" style={{textAlign: 'center'}} >
                                     <img
                                         className="artworkImage"
-                                        src={require('../../assets/artwork/BigWave.jpg')}
+                                        src={require('../../assets/artwork/MirageInContext.jpg')}
                                     />
                                     
                                     <Text className="artworkText">
@@ -168,7 +168,7 @@ const Artwork = () => {
                                 <Space direction="vertical" style={{textAlign: 'center'}} >
                                     <img
                                         className="artworkImage"
-                                        src={require('../../assets/artwork/EndlessShorebreak.png')}
+                                        src={require('../../assets/artwork/EndlessShorebreakInContext.jpg')}
                                     />
                                     
                                     <Text className="artworkText">
@@ -182,7 +182,7 @@ const Artwork = () => {
                                 <Space direction="vertical" style={{textAlign: 'center'}} >
                                     <img
                                         className="artworkImage"
-                                        src={require('../../assets/artwork/Mirage.png')}
+                                        src={require('../../assets/artwork/IsolationInContext.jpg')}
                                     />
                                     
                                     <Text className="artworkText">
@@ -192,13 +192,61 @@ const Artwork = () => {
                                 </Space>
                             </Col>
                         </Row>
-
-
                     </Col>
+
+                    <Row className="moreBox" align="center">
+
+                            <Col align="center">
+                                <Paragraph className="productText" >
+                                    MORE ARTWORK
+                                </Paragraph>
+
+                                <Row>
+                                    <Col>
+                                        <Space direction="vertical" style={{textAlign: 'center'}} >
+                                            <img
+                                                className="moreImage"
+                                                src={require('../../assets/artwork/TropicanaMockup.png')}
+                                            />
+                                            
+                                            <Text className="moreText">
+                                                "Tropicana" 
+                                            </Text>                                 
+                                        </Space>
+                                    </Col>
+
+                                    <Col>
+                                        <Space direction="vertical" style={{textAlign: 'center'}} >
+                                            <img
+                                                className="moreImage"
+                                                src={require('../../assets/artwork/TropicanaMockup.png')}
+                                            />
+                                            
+                                            <Text className="moreText">
+                                                "Tropicana" 
+                                            </Text>                                 
+                                        </Space>
+                                    </Col>
+
+                                    <Col>
+                                        <Space direction="vertical" style={{textAlign: 'center'}} >
+                                            <img
+                                                className="moreImage"
+                                                src={require('../../assets/artwork/TropicanaMockup.png')}
+                                            />
+                                            
+                                            <Text className="moreText">
+                                                "Tropicana" 
+                                            </Text>                                 
+                                        </Space>
+                                    </Col>
+                                </Row>
+                            </Col>
+                        </Row>
                 </Col>
             </Content>
 
-            <Footer className="footerArtwork"> 
+            <Footer className="footer"> 
             <AAFooter/>
             </Footer>
         </Layout>

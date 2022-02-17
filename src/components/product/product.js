@@ -180,7 +180,7 @@ const BigTreeProduct = () => {
                 </Col>
             </Content>
 
-            <Footer className="footerProduct">
+            <Footer className="footer">
                 <AAFooter/>
             </Footer>
         </Layout>

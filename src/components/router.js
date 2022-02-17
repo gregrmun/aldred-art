@@ -14,6 +14,7 @@ import Clientwork from "./portfolio/clientwork";
 import CustomSurfboards from "./services/customsurfboards";
 import CustomCanvases from "./services/customcanvases";
 import GraphicDesign from "./services/graphicdesign";
+import PriceList from "./services/pricelist";
 import BigTreeProduct from "./product/product";
 import Success from "./payment/success";
 import Cancelled from "./payment/cancelled";
@@ -37,6 +38,7 @@ export default class HomeRouter extends Component {
                 <Route path='/services/custom-surfboards' component={CustomSurfboards} />
                 <Route path='/services/custom-canvases' component={CustomCanvases} />
                 <Route path='/services/graphic-design' component={GraphicDesign} />
+                <Route path='/services/price-list' component={PriceList} />
                 <Route path='/shop/product/big-tree' component={BigTreeProduct} />
               </Switch>
             </Router>

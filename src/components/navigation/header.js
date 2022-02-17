@@ -41,6 +41,10 @@ const NavbarStyled = (props) => {
     history.push("/services/graphic-design");
   };
 
+  const goToPriceList = () => {
+    history.push("/services/price-list")
+  }
+
   const PortfolioMenu = () => {
 
     return (
@@ -76,6 +80,11 @@ const NavbarStyled = (props) => {
         <Menu.Item>
           <a target="_blank" onClick={goToGraphicDesign}>
             Graphic Design
+          </a>
+        </Menu.Item>
+        <Menu.Item>
+          <a target="_blank" onClick={goToPriceList}>
+            Price List
           </a>
         </Menu.Item>
       </Menu>
