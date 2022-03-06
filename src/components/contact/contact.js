@@ -11,6 +11,7 @@ import {
     Input,
     } from 'antd';
 import { useHistory } from 'react-router-dom';
+import emailjs from '@emailjs/browser';
 // import request from 'request';
 
 import '../index.css';
@@ -47,7 +48,14 @@ const Contact = () => {
     const [form] = Form.useForm();
 
     const onFinish = (values) => {
-        console.log(values);
+
+        emailjs.send('service_0giubfm', 'template_bzxbza2', values, 'Q8jWeoF0hgc5eK3_E')
+        .then(function(response) {
+            console.log('Success!', response.status, response.text);
+        }, function(error) {
+            console.log('Failed...', error)
+        });
+        console.log(values)
       };
 
     // let url = 'https://api.instagram.com/v1/users/self/media/recent/?access_token='
@@ -122,31 +130,31 @@ const Contact = () => {
                             className="formFont"
                         >
                             <Form.Item 
-                                name={['user', 'name']}
-                                label="Name"  
+                                name='name'
+                                label="name"  
                                 required 
                                 tooltip="This is a required field"
                             >
                                 <Input placeholder="John Appleseed" />
                             </Form.Item>
                             <Form.Item 
-                                name={['user', 'email']}
-                                label="Email" 
+                                name='email'
+                                label="email" 
                                 rules={[{type: 'email'}]} 
                                 required 
                             >
                                 <Input placeholder="john.appleseed@gmail.com" />
                             </Form.Item>
                             <Form.Item 
-                                name={['user', 'subject']}
-                                label="Subject" 
+                                name='subject'
+                                label="subject" 
                                 required 
                             >
                                 <Input placeholder="Commission" />
                             </Form.Item>
                             <Form.Item 
-                                name={['user', 'message']}
-                                label="Message" 
+                                name='message'
+                                label="message" 
                                 required 
                             >
                                 <Input.TextArea placeholder="Hi Cam," />

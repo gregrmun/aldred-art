@@ -1,0 +1,7 @@
+{
+  "permissions": {},
+  "lambdaLayers": [],
+  "secretNames": [
+    "INST_LONG_TOKEN"
+  ]
+}

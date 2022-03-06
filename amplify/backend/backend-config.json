@@ -1,0 +1,10 @@
+{
+  "function": {
+    "aldredart31cafd18": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": []
+    }
+  }
+}
